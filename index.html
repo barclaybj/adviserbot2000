@@ -7,7 +7,7 @@
     <style>
         body {
             background-color: #003366; /* Deep blue */
-            color: #ffffff; /* White text */
+            color: #ffffff;
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 40px;
@@ -19,14 +19,24 @@
             font-size: 1.2em;
             margin-bottom: 30px;
         }
-        iframe {
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.3);
-        }
         .logo {
             width: 150px;
             margin-bottom: 20px;
+        }
+        .chatbot-button {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #003366;
+            padding: 12px 24px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .chatbot-button:hover {
+            background-color: #e6b800;
         }
     </style>
 </head>
@@ -35,7 +45,9 @@
     <h1>Welcome to AdviserBot2000</h1>
     <p>Ask a question about benefits, housing, or debt and let our bot help you 24/7.</p>
 
-    <!-- Embed the Zapier Chatbot using iframe -->
-   <iframe src='https://interfaces.zapier.com/embed/chatbot/cmbnc9m1z000cxwydh2rw7uvy' height='600px' width='400px' allow='clipboard-write *' style="border: none;"></iframe>
+    <!-- Direct Link to the Chatbot -->
+    <a href="https://interfaces.zapier.com/embed/cmbnc9m1z000cxwydh2rw7uvy" target="_blank" class="chatbot-button">
+        Click here to launch the chatbot
+    </a>
 </body>
 </html>
