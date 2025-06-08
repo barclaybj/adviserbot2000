@@ -19,11 +19,10 @@
             font-size: 1.2em;
             margin-bottom: 30px;
         }
-        zapier-interfaces-chatbot-embed {
-            display: block;
-            margin: 0 auto;
-            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        iframe {
+            border: none;
             border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
         }
         .logo {
             width: 150px;
@@ -32,17 +31,15 @@
     </style>
 </head>
 <body>
-    <img src="https://upload.wikimedia.org/wikipedia/en/3/3f/Citizens_Advice_logo.svg" alt="Citizens Advice Logo" class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Citizens_Advice_logo.svg/600px-Citizens_Advice_logo.svg.png" alt="Citizens Advice Logo" class="logo">
     <h1>Welcome to AdviserBot2000</h1>
     <p>Ask a question about benefits, housing, or debt and let our bot help you 24/7.</p>
 
-    <!-- Embed the Zapier Chatbot -->
-    <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
-    <zapier-interfaces-chatbot-embed 
-        is-popup='false' 
-        chatbot-id='cmbnc9m1z000cxwydh2rw7uvy' 
-        height='600px' 
-        width='400px'>
-    </zapier-interfaces-chatbot-embed>
+    <!-- Embed the Zapier Chatbot using iframe -->
+    <iframe 
+        src="https://interfaces.zapier.com/embed/cmbnc9m1z000cxwydh2rw7uvy" 
+        width="400" 
+        height="600">
+    </iframe>
 </body>
 </html>
